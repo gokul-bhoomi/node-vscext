@@ -3,20 +3,20 @@
 
 Commonly used node snippets made easy !
 
-I created this to make life simple for Node developers.
+I created this to make life easy for Node developers.
 
 ## Shortcuts / Commands
 
 ### Simple Server Templates
 
-| **Command**    | **Description**                                                    |
+| **Command**    | **Description**                                                   |
 | -------------- | ----------------------------------------------------------------- |
 | !exp-server    | Creates a Simple Express Server                                   |
 | !http-server   | Creates a simple http Server                                      |
 
 ### Other Commands
 
-| **Command**    | **Help Text**                                                    |
+| **Command**    | **Description**                                                  |
 | -------------- | -----------------------------------------------------------------|
 | exp-get        | GET Request                                                      |
 | exp-put        | PUT Request                                                      |
