@@ -1,0 +1,33 @@
+{
+    "name": "easy-node-snippets",
+    "displayName": "Easy Node Snippets",
+    "description": "Node snippets made easy",
+    "publisher": "Gokul Kumar",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/gokul-bhoomi/node-vscext.git"
+    },
+    "icon": "icon.png",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.46.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/templateSnippets.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/moduleSnippets.json"
+            }
+        ]
+    },
+    "dependencies": {
+        "http": "0.0.1-security"
+    }
+}

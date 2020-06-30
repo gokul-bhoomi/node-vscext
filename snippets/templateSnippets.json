@@ -1,0 +1,71 @@
+{
+    "ExpressServer": {
+        "prefix": "!exp-server",
+        "body": [
+            "const express = require('express');",
+            "const app = express();",
+            "const port = 3000;",
+            "$0",
+            "app.get('/', (req, res) => res.send('Hello there!'));",
+            "app.listen(port, () => console.log(`Server Started!`));"
+        ],
+        "description": "Creates a simple express server"
+    },
+    "HttpServer": {
+        "prefix": "!http-server",
+        "body": [
+            "var http = require('http');",
+            "$0",
+            "http.createServer( (req, res) => {",
+            "   res.write('Hello there!');",
+            "   res.end();",
+            "}).listen(8080);"
+        ],
+        "description": "Creates a simple http server"
+    },
+    "GetRequest": {
+        "prefix": "exp-get",
+        "body": [
+            "app.get('/', (req, res) => { ",
+            "    res.send('GET request')",
+            "    });"
+        ],
+        "description": "Creates a get request"
+    },
+    "PutRequest": {
+        "prefix": "exp-put",
+        "body": [
+            "app.put('/', (req, res) => { ",
+            "    res.send('PUT request')",
+            "    });"
+        ],
+        "description": "Creates a put request"
+    },
+    "PostRequest": {
+        "prefix": "exp-post",
+        "body": [
+            "app.post('/', (req, res) => { ",
+            "    res.send('POST request')",
+            "    });"
+        ],
+        "description": "Creates a post request"
+    },
+    "DeleteRequest": {
+        "prefix": "exp-delete",
+        "body": [
+            "app.delete('/', (req, res) => { ",
+            "    res.send('DELETE request')",
+            "    });"
+        ],
+        "description": "Creates a delete request"
+    },
+    "PatchRequest": {
+        "prefix": "exp-patch",
+        "body": [
+            "app.patch('/', (req, res) => { ",
+            "    res.send('PATCH request')",
+            "    });"
+        ],
+        "description": "Creates a patch request"
+    }
+}

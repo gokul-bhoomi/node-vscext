@@ -1,0 +1,165 @@
+{
+    "Require": {
+        "prefix": "req",
+        "body": [
+            "const ${1:module} = require(${1:module});"
+        ],
+        "description": "Import a module"
+    },
+    "ModuleExport": {
+        "prefix": "me",
+        "body": [
+            "module.exports = ${1:Module};"
+        ],
+        "description": "Export module"
+    },
+    "PathModule": {
+        "prefix": "req-path",
+        "body": [
+            "const path = require('path');"
+        ],
+        "description": "Path module"
+    },
+    "ExpressModule": {
+        "prefix": "req-express",
+        "body": [
+            "const express = require('express');"
+        ],
+        "description": "Express module"
+    },
+    "BcryptJs": {
+        "prefix": "req-bcrypt",
+        "body": [
+            "const bcrypt = require('bcryptjs');"
+        ],
+        "description": "bcrypt module"
+    },
+    "JsonWebToken": {
+        "prefix": "req-jwt",
+        "body": [
+            "const jwt = require('jsonwebtoken');"
+        ],
+        "description": "Json web token module"
+    },
+    "Config": {
+        "prefix": "req-conf",
+        "body": [
+            "const config = require('config');"
+        ],
+        "description": "Config module"
+    },
+    "FileSystem": {
+        "prefix": "req-fs",
+        "body": [
+            "const fs = require('fs');"
+        ],
+        "description": "File System module"
+    },
+    "ReadFile": {
+        "prefix": "fsrf",
+        "body": [
+            "const data = fs.readFile(${1:'assets/message.txt'},  (err) => {",
+            "   if(err) ",
+            "   throw err;",
+            "   });"
+        ],
+        "description": "Reading a file"
+    },
+    "ReadFileSync": {
+        "prefix": "fsrfs",
+        "body": [
+            "const data = fs.readFileSync(${1:'assets/message.txt'},  (err) => {",
+            "   if(err) ",
+            "   throw err;",
+            "   });"
+        ],
+        "description": "Reading a file Synchronously"
+    },
+    "ReadStream": {
+        "prefix": "fsrs",
+        "body": [
+            "const readStream = fs.readstream(${1:'assets/message.txt'},  (err) => {",
+            "   if(err) ",
+            "   throw err;",
+            "   });"
+        ],
+        "description": "Read Stream"
+    },
+    "WriteFile": {
+        "prefix": "fswf",
+        "body": [
+            "fs.writeFile(${1:'assets/message.txt'}, content , (err) => {",
+            "   if(err) ",
+            "   throw err;",
+            "   });"
+        ],
+        "description": "Writing a file"
+    },
+    "WriteFileSync": {
+        "prefix": "fswfs",
+        "body": [
+            "fs.writeFileSync(${1:'assets/message.txt'});"
+        ],
+        "description": "Writing a file"
+    },
+    "AppendFile": {
+        "prefix": "fsaf",
+        "body": [
+            "fs.appendFile(${1:'assets/message.txt'}, new_data , (err) => {",
+            "   if(err) ",
+            "   throw err;",
+            "   console.log('The new_content was appended successfully');",
+            "   });"
+        ],
+        "description": "Appending a file"
+    },
+    "AppendFileSync": {
+        "prefix": "fsafs",
+        "body": [
+            "fs.appendFileSync(${1:'assets/message.txt'}, new_data , (err) => {",
+            "   if(err) ",
+            "   throw err;",
+            "   console.log('The new_content was appended successfully');",
+            "   });"
+        ],
+        "description": "Appending a file Synchoronously"
+    },
+    "PathJoin": {
+        "prefix": "pjoin",
+        "body": [
+            "path.join(${1:});"
+        ],
+        "description": "Path Join"
+    },
+    "PathDiretory": {
+        "prefix": "pdir",
+        "body": [
+            "path.dirname(${1:});"
+        ],
+        "description": "Path Directory Name"
+    },
+    "PathBaseName": {
+        "prefix": "pbase",
+        "body": [
+            "path.basename(${1:});"
+        ],
+        "description": "Path BaseName"
+    },
+    "PathExtension": {
+        "prefix": "pext",
+        "body": [
+            "path.extname(${1:});"
+        ],
+        "description": "Path Extension Name"
+    },
+    "Event": {
+        "prefix": "event",
+        "body": [
+            "var events = require('events');",
+            "var em= new events.EventEmitter();",
+            "eventEmitter.on('first_event', () => { console.log('Data received !'); });",
+            "em.emit('first_event','Example Event');"
+        ],
+        "description": "Event Emitter"
+    }
+}
