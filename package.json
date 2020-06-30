@@ -2,7 +2,7 @@
     "name": "easy-node-snippets",
     "displayName": "Easy Node Snippets",
     "description": "Node snippets made easy",
-    "publisher": "Gokul Kumar",
+    "publisher": "GokulKumar",
     "repository": {
         "type": "git",
         "url": "https://github.com/gokul-bhoomi/node-vscext.git"
